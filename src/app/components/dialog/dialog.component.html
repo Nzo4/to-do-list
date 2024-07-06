@@ -1,0 +1,13 @@
+<div *ngIf="dialogState" class="modal">
+  <h2>Новая задача</h2>
+  <div class="modal-group">
+    <input class="modal-input" (keydown.enter)="onKeydown()" [(ngModel)]="noteName" type="text"
+      placeholder="Введите вашу задачу...">
+    <div class="buttons">
+      <button (click)="closeDialog()" class="close">Закрыть</button>
+      <button (click)="sumbitNote()" class="apply">Выполнить</button>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="dialogState" class="overlay" (click)="closeDialog()"></div>

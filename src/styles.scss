@@ -1,1 +1,55 @@
+@font-face {
+  font-family: 'Inria Serif';
+  src: url('./assets/fonts/InriaSerif-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
 /* You can add global styles to this file, and also import other style files */
+:root {
+  --primary-color: #6C63FF;
+  --white-color: #ffffff;
+  --black-color: #252525;
+  --not-open-color: #5850DD;
+  --open-color: #534CC2;
+  --icon-color: #CDCDCD;
+  --delete-color-hover: #E50000;
+  --search-text-color: #C3C1E5;
+  --standart-radius: 5px;
+
+  --focus-light: 0px 0px 4px var(--primary-color);
+  --focus-black: 0px 0px 4px var(--white-color);
+
+  --opacity-accoridion: 20%;
+
+  --padding-x: 16px;
+
+  --font-size: 26px;
+
+  --container-width: 750px;
+  --container-padding-x: 15px;
+}
+
+body {
+  font-family: 'Inria Serif';
+}
+
+
+ol,
+ul,
+li,
+a {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+svg *[stroke] {
+  stroke: currentColor;
+}
+
+svg *[fill] {
+  fill: currentColor;
+}

@@ -1,0 +1,8 @@
+<div class="accordion">
+  <button appAccordion (isOpenChange)="changeStateAccordion($event)"
+    class="accordion-button"><span>{{currentFilterName}}</span></button>
+  <div appAccordionItems [isOpen]="openOptionToggle" (getOptionName)="getOptionName($event)" class="accordion-items">
+    <ul *ngFor="let option of states">
+      <li>{{option.name}}</li>
+    </ul>
+  </div>

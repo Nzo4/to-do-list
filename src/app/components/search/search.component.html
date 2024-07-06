@@ -1,0 +1,7 @@
+<div class="search">
+  <div class="search-input-wrapper">
+    <input class="search-input" (input)="findingNote()" [(ngModel)]="findNote" type="text" placeholder="Найти задание">
+  </div>
+  <app-accordion />
+  <button (click)="changeTheme()" class="change-theme"></button>
+</div>

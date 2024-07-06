@@ -1,0 +1,12 @@
+<ng-container *ngIf="notes.length > 0; else empty">
+  <main *ngFor="let note of notes" class="notes">
+    <app-note [note]="note"></app-note>
+  </main>
+</ng-container>
+
+<ng-template #empty>
+  <div class="empty">
+    <img [src]="currentTheme === 'dark' ? '../../../assets/empty-dark.png' : '../../../assets/empty.png'" alt="empty">
+    <span>У вас нет заданий</span>
+  </div>
+</ng-template>
